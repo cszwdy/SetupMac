@@ -8,6 +8,7 @@ tree,Brew,,Package
 fastlane,Brew,,Package
 python,Brew,,Package
 golang,Brew,,Package
+jenkins,Brew,,Package
 cocoapods,Gem,,Package
 visual-studio-code,Cask,,Develop
 docker,Cask,,Package
