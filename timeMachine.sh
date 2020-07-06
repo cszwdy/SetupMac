@@ -149,6 +149,25 @@ p_setup() {
 #				exit 127
 			fi
 		}
+
+	setup_vscode() {
+		brew cask list -1 | grep visual-studio-code > /dev/null
+
+		if [[ $? -eq 0 ]]; then
+			echo "✅ 已安装VSCode"
+			return 0
+		else
+			echo "✅ VSCode安装中"
+			brew cask install visual-studio-code
+			if [[ $? -eq 0  ]]; then
+				echo '✅ VSCode安装成功'
+			else
+				echo '❌ VSCode安装失败'
+#				exit 127
+			fi
+		fi
+		return 1
+	}
 	
 	setup_xcoode_command_line_tools
 	setup_git
@@ -157,6 +176,7 @@ p_setup() {
 	setup_gem
 	setup_awk
 	setup_mas
+	# setup_vscode
 	# setup_node
 	echo
 }
