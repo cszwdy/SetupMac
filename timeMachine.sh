@@ -157,7 +157,7 @@ p_setup() {
 	setup_gem
 	setup_awk
 	setup_mas
-	setup_node
+	# setup_node
 	echo
 }
 
