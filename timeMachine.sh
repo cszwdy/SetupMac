@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MYDIR=`pwd`
+MYDIR=$(dirname "$0")
 
 # ---------- methods ----------
 p_setup() {
@@ -165,6 +165,7 @@ p_setup() {
 p_install_sofeware() {
 	show() {
 		cd $MYDIR
+		echo $MYDIR
 		chmod a+x Sofeware.csv
 		awk -F ',' 'NR > 1 {printf("%-4s %-22s %-6s  %-12s  %-5s\n", NR-1, $1, $2, $3, $4)}' Sofeware.csv
 	}
