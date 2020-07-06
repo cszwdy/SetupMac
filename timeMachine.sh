@@ -25,8 +25,8 @@ p_setup() {
 		cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
 		git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
 
-		cd "$(brew --repo)"/Library/Taps/homebrew/homebrew-cask
-		git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-cask.git
+		# cd "$(brew --repo)"/Library/Taps/homebrew/homebrew-cask
+		# git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-cask.git
 #		brew update
 
 		brew update > /dev/null
@@ -44,6 +44,21 @@ p_setup() {
 		if ! `command -v awk > /dev/null`; then
 			echo 未检测到AWK，请先安装AWK再执行本程序...
 			exit 127
+		fi
+	}
+
+	setup_cask() {
+		if `command -v cask > /dev/null 2>&1`; then
+			echo '✅ 已安装Cask'
+		else
+			echo '⏳ Cask安装中'
+			brew install cask
+			if [[ $? -eq 0  ]]; then
+				echo '✅ Cask安装成功'
+			else
+				echo '⏳ Cask安装失败，请检查网络连接...'
+				exit 127
+			fi
 		fi
 	}
 	
@@ -138,6 +153,7 @@ p_setup() {
 	setup_xcoode_command_line_tools
 	setup_git
 	setup_homebrew
+	setup_cask
 	setup_gem
 	setup_awk
 	setup_mas
