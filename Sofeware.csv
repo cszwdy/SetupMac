@@ -1,0 +1,58 @@
+Name,Channel,MasID,Type
+aria2,Brew,,Package
+mysql,Brew,,Package
+curl,Brew,,Package
+wget,Brew,,Package
+aria2,Brew,,Package
+tree,Brew,,Package
+fastlane,Brew,,Package
+python,Brew,,Package
+golang,Brew,,Package
+cocoapods,Gem,,Package
+docker,Cask,,Package
+blender,Cask,,Develop
+coderunner,Cask,,Develop
+unity-hub,Cask,,Develop
+unity,Cask,,Develop
+epic-games,Cask,,Develop
+cleanshot,Cask,,Tool
+numi,Cask,,Tool
+cctalk,Cask,,Tool
+paw,Cask,,Tool
+tableplus,Cask,,Tool
+dash,Cask,,Tool
+fork,Cask,,Tool
+alfred,Cask,,Tool
+hazel,Cask,,Tool
+v2rayu,Cask,,Tool
+one-switch,Cask,,Tool
+sketch,Cask,,Design
+iina,Cask,,Tool
+downie,Cask,,Tool
+istat-menus,Cask,,Tool
+geekbench,Cask,,Tool
+charles,Cask,,Tool
+wireshark,Cask,,Tool
+visual-studio,Cask,,Develop
+Xcode,Mas,497799835,Develop
+Playgrounds,Mas,1496833156,Code
+Developer,Mas,640199958,Code
+Apple Configurator 2,Mas,1037126344,Tool
+PDF Expert,Mas,1055273043,Tool
+Affinity Designer,Mas,824171161,Design
+Affinity Photo,Mas,824183456,Design
+iText,Mas,1314980676,Tool
+Hidden Bar,Mas,1452453066,Tool
+CleanMyMac X,Mas,1339170533,Tool
+Monodraw,Mas,920404675,Design
+Pages,Mas,409201541,Tool
+Keynote,Mas,409183694,Tool
+Numbers,Mas,409203825,Tool
+Manico,Mas,724472954,Tool
+Mindnode,Mas,1289197285,Tool
+The Unarchiver,Mas,425424353,Tool
+Permute 3,Mas,1444998321,Tool
+MWeb,Mas,1403919533,Tool
+DaisyDisk,Mas,411643860,Tool
+SnippetsLab,Mas,1006087419,Tool
+Pixelmator Pro,Mas,1289583905,Design
