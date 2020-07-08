@@ -1,6 +1,6 @@
 # SetupMac
 
-Following shells is that how to use this script.
+Open Terminal and using following commands to use this script to setup your Mac.
 
 mkdir Git
 
