@@ -11,6 +11,7 @@ golang,Brew,,Package
 jenkins,Brew,,Package
 cocoapods,Gem,,Package
 visual-studio-code,Cask,,Develop
+deepl,Cask,,Tool
 docker,Cask,,Package
 blender,Cask,,Develop
 coderunner,Cask,,Develop
